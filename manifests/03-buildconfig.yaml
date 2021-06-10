@@ -17,8 +17,8 @@ spec:
   runPolicy: Serial
   source:
     git:
-      ref: master
-      uri: https://github.com/vrutkovs/promecieus
+      ref: alerts
+      uri: https://github.com/omertuc/promecieus
     type: Git
   strategy:
     type: Docker

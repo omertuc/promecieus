@@ -26,7 +26,7 @@ const (
 	artifactsPath = "artifacts"
 	promTarPath   = "metrics/prometheus.tar"
 	extraPath     = "gather-extra"
-	e2ePrefix     = "e2e"
+	e2ePrefix     = "commit"
 )
 
 func generateAppLabel() string {

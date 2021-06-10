@@ -1,7 +1,8 @@
 FROM registry.ci.openshift.org/openshift/release:golang-1.15 AS builder
 WORKDIR /go/src/github.com/vrutkovs/promecieus
 COPY . .
-RUN go mod vendor && go build -o ./promecieus ./cmd/promecieus
+RUN go mod vendor
+RUN go build -o ./promecieus ./cmd/promecieus
 
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.2
